@@ -1,0 +1,87 @@
+.root {
+    -fx-background-color: #f4f2ee;
+}
+
+.dark.root {
+    -fx-background-color: #222;
+}
+
+.dark.root > * {
+    -fx-background-color: #222;
+}
+
+#nav {
+    -fx-background-color: #fff;
+}
+
+.dark #nav {
+    -fx-background-color: #333;
+}
+
+#searchBox {
+    -fx-border-width: 8px;
+    -fx-border-color: #fff;
+    -fx-background-color: #edf3f8;
+}
+
+.dark #searchBox {
+    -fx-background-color: #555;
+    -fx-border-color: #333;
+}
+
+#searchInput {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+}
+
+.dark #searchInput {
+    -fx-text-fill: #fff;
+}
+
+.label{
+    -fx-text-alignment: center;
+    -fx-text-fill: #000;
+}
+
+.dark .label {
+    -fx-text-fill: #fff;
+}
+
+#navProfileImage{
+    -fx-background-radius: 100%;
+}
+
+.box {
+    -fx-opacity: 0.8;
+}
+
+.selectedBox{
+    -fx-opacity: 1;
+    -fx-border-color: #000;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.dark .selectedBox {
+    -fx-border-color: #fff;
+}
+
+.navIcon {
+    -fx-fill: #000;
+}
+
+.dark .navIcon {
+    -fx-fill: #fff;
+}
+
+.dark #searchIcon {
+    -fx-fill: #fff;
+}
+
+#card {
+    -fx-background-radius: 50px;
+    -fx-background-color: #fff;
+}
+
+.dark #card {
+    -fx-background-color: #444;;
+}

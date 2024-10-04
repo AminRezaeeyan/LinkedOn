@@ -1,0 +1,30 @@
+#profileBox{
+    -fx-background-color: #fff;
+    -fx-background-radius: 15px;
+}
+.dark #profileBox{
+    -fx-background-color: #444;
+}
+
+.scrollPane {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+#newPost {
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px;
+    -fx-padding: 0 30px;
+}
+
+.dark #newPost {
+    -fx-background-color: #444;
+}
+
+.dark #newPost > Label {
+    -fx-text-fill: #000;
+}

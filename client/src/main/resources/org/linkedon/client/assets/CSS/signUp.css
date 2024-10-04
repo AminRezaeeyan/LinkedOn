@@ -1,0 +1,196 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.root.dark {
+    -fx-background-color: #222;
+}
+
+#box {
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 15, 0, 0, 4);
+    -fx-background-color: #fff;
+    -fx-padding: 15px 20px;
+}
+
+.dark #box {
+    -fx-effect: dropshadow(three-pass-box, rgba(150, 150, 150, 0.15), 25, 0, 0, 4);
+    -fx-background-color: #222;
+}
+
+#heading {
+    -fx-font-size: 40px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: 600;
+}
+
+.dark #heading {
+    -fx-text-fill: #fff;
+}
+
+#subheading {
+    -fx-font-size: 20px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: 300;
+    -fx-opacity: 0.7;
+}
+
+.dark #subheading {
+    -fx-text-fill: #fff;
+}
+
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: 100;
+}
+
+.dark .label {
+    -fx-text-fill: #fff;
+}
+
+.input {
+    -fx-padding: 5 25;
+    -fx-font-size: 18px;
+    -fx-font-weight: 100;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+}
+
+.dark .input {
+    -fx-border-color: #fff;
+    -fx-text-fill: #fff;
+    -fx-background-color: #222;
+}
+
+.input:focused {
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(0, 0, 255, 0.3);
+}
+
+#emailWarning, #passwordWarning {
+    -fx-text-fill: rgba(255, 0, 0, 0.8);
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-wrap-text: true;
+    -fx-padding: 0 10px 0;
+}
+
+#submitBtn {
+    -fx-background-color: #0a62c2;
+    -fx-text-fill: #fff;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+#submitBtn:hover {
+    -fx-opacity: 0.8;
+}
+
+#submitBtn:focused {
+    -fx-opacity: 0.8;
+    -fx-background-color: #0352a7;
+}
+
+#privacyText {
+    -fx-font-size: 15px;
+    -fx-font-weight: 100;
+    -fx-opacity: 0.8;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+#signInBtn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00f;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-padding: 0;
+}
+
+#signInBtn:hover {
+    -fx-underline: true;
+}
+
+#welcomeLabel {
+    -fx-font-size: 35px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: 600;
+    -fx-text-alignment: center;
+}
+
+.dark #welcomeLabel {
+    -fx-text-fill: #fff;
+}
+
+#warningLabel {
+    -fx-text-fill: rgba(255, 0, 0, 0.8);
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-wrap-text: true;
+    -fx-padding: 0 10px 0;
+}
+
+#locationInput {
+    -fx-background-color: #fff;
+}
+
+.dark #locationInput {
+    -fx-background-color: #222;
+    -fx-text-fill: #fff;
+    -fx-font-size: 18px;
+}
+
+.borderedBox {
+    -fx-background-color: transparent;
+    -fx-border-color: #000;
+    -fx-border-width: 1px;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}
+
+.borderedBox .list-cell {
+    -fx-font-size: 15px;
+}
+
+.dark .borderedBox {
+    -fx-border-color: #fff;
+}
+
+.dark .borderedBox .list-cell {
+    -fx-text-fill: #888;
+}
+
+#skipBtn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #000;
+    -fx-font-size: 30px;
+    -fx-font-weight: 600;
+}
+
+.dark #skipBtn {
+    -fx-text-fill: #fff;
+}
+
+#skipBtn:hover {
+    -fx-underline: true;
+}
+
+.radioBtn {
+    -fx-font-size: 20px;
+    -fx-border-color: #000;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+}
+
+.dark .radioBtn {
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+}
+
+.radioBtn:selected, .dark .radioBtn:selected {
+    -fx-border-color: green;
+}

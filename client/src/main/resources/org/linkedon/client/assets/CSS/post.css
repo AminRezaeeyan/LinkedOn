@@ -1,0 +1,21 @@
+#post {
+    -fx-background-radius: 20px;
+    -fx-background-color: #fff;
+}
+
+.dark #post {
+    -fx-background-color: #444;
+}
+
+.dark .icon{
+    -fx-fill: #aaa;
+}
+
+.icon.active{
+    -fx-fill: #1b6dca;
+}
+
+#likeText.active {
+    -fx-text-fill: #1b6dca;
+}
+

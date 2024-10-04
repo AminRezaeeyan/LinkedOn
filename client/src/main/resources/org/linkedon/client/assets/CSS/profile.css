@@ -1,0 +1,197 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.dark .root {
+    -fx-background-color: #222;
+}
+
+#exitPopUp {
+    -fx-fill: #444;
+}
+
+.dark #exitPopUp {
+    -fx-fill: #fff;
+}
+
+.dark #popUpHeading {
+    -fx-text-fill: #fff;
+}
+
+#popUp {
+    -fx-background-color: #fff;
+    -fx-background-radius: 25px;
+}
+
+.dark #popUp {
+    -fx-background-color: #333;
+}
+
+#scrollContainer {
+    -fx-background-color: #fff;
+}
+
+.dark #scrollContainer {
+    -fx-background-color: #333;
+}
+
+#scrollPane {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+}
+
+#scrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+#name{
+    -fx-font-size: 40px;
+    -fx-font-weight: 700;
+    -fx-font-family: sans-serif;
+}
+
+#headline{
+    -fx-font-size: 16px;
+}
+
+#location{
+    -fx-font-size: 16px;
+    -fx-opacity: 0.7;
+}
+
+#contactInfo {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0a66c2;
+    -fx-font-size: 16px;
+}
+
+#connections {
+    -fx-background-color: transparent;
+    -fx-text-fill: #0a66c2;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+}
+
+#btn{
+    -fx-background-color: #0a66c2;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 20px;
+}
+
+#currentEducation {
+    -fx-font-size: 20px;
+}
+
+.dark #editProfile {
+    -fx-fill: #fff;
+}
+
+.input {
+    -fx-font-size: 20px;
+}
+
+.dark .input {
+    -fx-background-color: #444;
+    -fx-text-fill: #fff;
+}
+
+#submitBtn {
+    -fx-background-color: #1b6dca;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-background-radius: 15px;
+}
+
+.dark .label{
+    -fx-text-fill: #fff;
+}
+
+.dark #birthday .text-field {
+    -fx-background-color: #333;
+    -fx-text-fill: #fff;
+}
+
+.dark #phoneType .list-cell{
+    -fx-text-fill: #fff;
+}
+
+.dark #phoneType .list-view{
+    -fx-background-color: #444;
+}
+
+.profileContainer {
+    -fx-background-color: #fff;
+}
+.dark .profileContainer {
+    -fx-background-color: #333;
+}
+
+.dark #addEducation, .dark #addSkill {
+    -fx-fill: #ddd;
+}
+
+#skillInput {
+    -fx-background-color: #ddd;
+}
+
+.dark #skillInput {
+    -fx-background-color: #444;
+}
+
+.dark #skillInput .list-cell, .dark #skillInput .list-view{
+    -fx-background-color: #555;
+    -fx-text-fill: #fff;
+}
+
+#schoolInput, #degreeInput {
+    -fx-background-color: #ddd;
+}
+
+.dark #schoolInput, .dark #degreeInput {
+    -fx-background-color: #444;
+}
+
+.dark #schoolInput .list-cell, .dark #schoolInput .list-view,
+.dark #degreeInput .list-cell, .dark #degreeInput .list-view{
+    -fx-background-color: #555;
+    -fx-text-fill: #fff;
+}
+
+.dark #startDateInput .text-field,
+.dark #endDateInput .text-field {
+    -fx-background-color: #333;
+    -fx-text-fill: #fff;
+}
+
+#connect, #follow{
+    -fx-background-color: transparent;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-color: #1b6dca;
+    -fx-border-width: 2px;
+    -fx-text-fill: #1b6dca;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+}
+
+#connect.active, #follow.active {
+    -fx-background-color: #1b6dca;
+    -fx-text-fill: #fff;
+}
+
+#message {
+    -fx-background-color: #1b6dca;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-border-width: 2px;
+    -fx-text-fill: #fff;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+}
+
+.dark #textInput {
+    -fx-control-inner-background: #777;
+}
+

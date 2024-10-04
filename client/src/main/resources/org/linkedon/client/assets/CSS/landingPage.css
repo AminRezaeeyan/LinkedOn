@@ -1,0 +1,144 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.root.dark {
+    -fx-background-color: #222;
+}
+
+#header_sign_in_btn {
+    -fx-background-color: #fff;
+    -fx-text-fill: #1b6dca;
+    -fx-font-size: 20px;
+    -fx-border-color: #1b6dca;
+    -fx-border-radius: 35px;
+    -fx-background-radius: 35px;
+}
+
+.dark #header_sign_in_btn {
+    -fx-text-fill: #000;
+    -fx-border-color: #fff;
+    -fx-border-radius: 35px;
+    -fx-background-radius: 35px;
+}
+
+#header_sign_in_btn:hover {
+    -fx-background-color: #1b6dca;
+    -fx-text-fill: #222;
+}
+
+.dark #header_sign_in_btn:hover {
+    -fx-background-color: #222;
+    -fx-text-fill: #fff;
+}
+
+#main_sign_in_btn {
+    -fx-background-color: #fff;
+    -fx-text-fill: #000;
+    -fx-font-size: 20px;
+    -fx-border-color: #000;
+    -fx-border-width: 2px;
+    -fx-border-radius: 35px;
+    -fx-background-radius: 35px;
+}
+
+.dark #main_sign_in_btn {
+    -fx-border-color: #fff;
+}
+
+#main_sign_in_btn:hover {
+    -fx-text-fill: #fff;
+    -fx-background-color: #222;
+}
+
+#header_join_btn {
+    -fx-background-color: white;
+    -fx-text-fill: #000;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 35px;
+}
+
+.dark #header_join_btn {
+    -fx-background-color: #222;
+    -fx-text-fill: #fff;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 35px;
+    -fx-border-radius: 35px;
+    -fx-border-width: 2px;
+    -fx-border-color: #fff;
+}
+
+#header_join_btn:hover {
+    -fx-underline: true;
+}
+
+.dark #header_join_btn:hover {
+    -fx-underline: false;
+    -fx-background-color: #fff;
+    -fx-text-fill: #222;
+}
+
+#main_join_btn {
+    -fx-background-color: #fff;
+    -fx-text-fill: #1b6dca;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-padding: 0;
+}
+
+.dark #main_join_btn {
+    -fx-background-color: #222;
+    -fx-text-fill: #1b6dca;
+}
+
+#main_join_btn:hover {
+    -fx-underline: true;
+}
+
+#heading {
+    -fx-text-fill: #b24020;
+    -fx-font-size: 50px;
+    -fx-wrap-text: true;
+    -fx-font-weight: 100;
+    -fx-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Fira Sans', Ubuntu, Oxygen, 'Oxygen Sans', Cantarell, 'Droid Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Lucida Grande', Helvetica, Arial, sans-serif;
+    -fx-margin-top: 30px;
+    -fx-end-margin: 30px;
+}
+
+#privacy_text {
+    -fx-background-color: #fff;
+    -fx-test-fill: #aaa;
+    -fx-font-size: 17px;
+    -fx-font-weight: 100;
+    -fx-text-alignment: center;
+    -fx-wrap-text: true;
+    -fx-opacity: 0.7;
+}
+
+.dark #privacy_text {
+    -fx-background-color: #222;
+    -fx-text-fill: #fff;
+    -fx-opacity: 1.0;
+}
+
+.guide {
+    -fx-text-fill: #aaa;
+    -fx-font-size: 17px;
+    -fx-font-weight: 100;
+}
+
+.dark .guide {
+    -fx-text-fill: #fff;
+}
+
+#themeBtn {
+    -fx-background-color: #fff;
+    -fx-opacity: 0.6;
+}
+
+.dark #themeBtn {
+    -fx-background-color: #222;
+    -fx-opacity: 0.6;
+}

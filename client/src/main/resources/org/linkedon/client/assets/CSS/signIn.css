@@ -1,0 +1,119 @@
+.root {
+    -fx-background-color: #fff;
+}
+
+.root.dark {
+    -fx-background-color: #222;
+}
+
+#box {
+    -fx-background-radius: 15px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 15, 0, 0, 4);
+    -fx-background-color: #fff;
+    -fx-padding: 15px 20px;
+}
+
+.dark #box {
+    -fx-effect: dropshadow(three-pass-box, rgba(150, 150, 150, 0.15), 25, 0, 0, 4);
+    -fx-background-color: #222;
+}
+
+#heading{
+    -fx-font-size: 40px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: 600;
+}
+
+.dark #heading{
+    -fx-text-fill: #fff;
+}
+
+#subheading {
+    -fx-font-size: 15px;
+    -fx-font-family: sans-serif;
+    -fx-font-weight: 100;
+    -fx-opacity: 0.6;
+}
+
+.dark #subheading{
+    -fx-text-fill: #fff;
+}
+
+#emailLabel, #passwordLabel {
+    -fx-font-size: 20px;
+    -fx-font-weight: 100;
+    -fx-opacity: 0.7;
+}
+
+.dark #emailLabel,.dark #passwordLabel {
+    -fx-text-fill: #fff;
+}
+
+#emailInput, #passwordInput{
+    -fx-padding: 20 25 5;
+    -fx-font-size: 18px;
+    -fx-font-weight: 100;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-border-color: #000;
+}
+
+.dark #emailInput, .dark #passwordInput{
+    -fx-border-color: #fff;
+    -fx-text-fill: #fff;
+    -fx-background-color: #222;
+}
+
+#emailInput:focused, #passwordInput:focused{
+    -fx-border-width: 1px;
+    -fx-border-color: rgba(0,0,255,0.3);
+}
+
+#emailWarning, #passwordWarning{
+    -fx-text-fill: rgba(255,0,0,0.8);
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-wrap-text: true;
+    -fx-padding: 0 10px 0;
+}
+
+#submitBtn{
+    -fx-background-color: #0a62c2;
+    -fx-text-fill: #fff;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+
+#submitBtn:hover {
+    -fx-opacity: 0.8;
+}
+
+#submitBtn:focused {
+    -fx-opacity: 0.8;
+    -fx-background-color: #0352a7;
+}
+
+#privacyText{
+    -fx-font-weight: 100;
+    -fx-opacity: 0.8;
+    -fx-wrap-text: true;
+    -fx-text-alignment: center;
+}
+
+.dark #privacyText, .dark #guide {
+    -fx-text-fill: #fff;
+}
+
+#joinBtn{
+    -fx-background-color: transparent;
+    -fx-text-fill: #00f;
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-padding: 0;
+}
+#joinBtn:hover{
+    -fx-underline: true;
+}
