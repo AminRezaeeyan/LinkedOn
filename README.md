@@ -5,11 +5,11 @@ LinkedOn is a JavaFX-based desktop application that mimics the functionality of 
 ## Table of Contents
 
 - [Features](#Features)
-- [Technologies Used](#Technologies Used)
+- [Screenshots](#Screenshots)
+- [Technologies Used](#Technologies%20Used)
 - [Setup](#Setup)
 - [Configuration](#Configuration)
 - [Endpoints](#Endpoints)
-- [Screenshots](#Screenshots)
 - [Contribution](#Contribution)
 - [License](#License)
 
@@ -25,6 +25,35 @@ LinkedOn is a JavaFX-based desktop application that mimics the functionality of 
 - Secure password hashing and unique ID generation
 - Light and dark themes
 - Optimized database queries and using indexes for better performance
+
+## Screenshots
+
+| viewing your own profile | viewing other's profiles |
+|:------:|:-------:|
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/16.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/20.png) |
+
+| landing page | sign up | sign in|
+|:------:|:-------:|:-------:|
+|![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/1.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/4.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/3.png) |
+|![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/2.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/5.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/6.png) |
+
+| editting profile | adding educations and skills |
+|:------:|:-------:|
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/19.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/18.png) |
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/17.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/7.png)  |
+
+| home page | followers and connections |
+|:------:|:-------:|
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/12.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/14.png) |
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/13.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/11.png) |
+
+| invitations | searching users |
+|:------:|:-------:|
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/10.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/15.png) |
+
+| messaging | educations and skills |
+|:------:|:-------:|
+| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/9.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/8.png)  |
 
 ## Technologies Used
 
@@ -125,19 +154,6 @@ jwt.issuer=org.LinkedON
 ### Media
 - `api/media/users/:user-id/:media-name/:media-extension`
 - `api/media/posts/:post-id/:media-name/:media-extension`
-
-## Screenshots
-
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/1.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/2.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/3.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/4.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/5.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/6.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/7.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/8.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/9.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/10.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/11.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/12.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/13.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/14.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/15.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/16.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/17.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/18.png) |
-| ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/19.png) | ![demo](https://github.com/AminRezaeeyan/LinkedOn/blob/main/Screenshots/20.png) |
 
 ## Contribution
 
