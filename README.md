@@ -1,5 +1,7 @@
 # LinkedOn
 
+Advanced Programming project of @aut-ce
+
 LinkedOn is a JavaFX-based desktop application that mimics the functionality of LinkedIn. It features a beautiful user interface with both light and dark themes. Users can sign up, log in, connect with others, share posts, and much more.
 
 ## Table of Contents
