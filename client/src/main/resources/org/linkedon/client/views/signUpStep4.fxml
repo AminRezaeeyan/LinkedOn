@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1338.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane maxWidth="1200.0" prefHeight="679.0" prefWidth="1591.0" StackPane.alignment="CENTER">
+            <top>
+                <ImageView fitHeight="31.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+                    <image>
+                        <Image url="@../assets/images/linkedinLogo.png" />
+                    </image>
+                    <BorderPane.margin>
+                        <Insets top="15.0" />
+                    </BorderPane.margin>
+                </ImageView>
+            </top>
+            <center>
+                <VBox alignment="CENTER" prefHeight="636.0" prefWidth="868.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="welcomeLabel" alignment="CENTER" prefHeight="107.0" prefWidth="680.0" styleClass="heading" text="Your profile helps you discover new people and oppurtunities" wrapText="true" />
+                        <Label prefHeight="43.0" prefWidth="689.0" text="School or College/University" />
+                  <ComboBox fx:id="schoolInput" prefHeight="54.0" prefWidth="680.0" styleClass="borderedBox" />
+                        <GridPane hgap="20.0" prefHeight="79.0" prefWidth="680.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                            <children>
+                                <Label prefHeight="49.0" prefWidth="340.0" text="Start year" />
+                                <Label layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="340.0" text="End year (or expected)" GridPane.columnIndex="1" />
+                                <ComboBox fx:id="startYearInput" prefHeight="48.0" prefWidth="340.0" styleClass="borderedBox" GridPane.rowIndex="1" />
+                                <ComboBox fx:id="endYearInput" prefHeight="40.0" prefWidth="364.0" styleClass="borderedBox" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                            </children>
+                        </GridPane>
+                        <HBox fx:id="ageCondition" alignment="CENTER_LEFT" prefHeight="63.0" prefWidth="680.0" styleClass="borderedBox">
+                            <VBox.margin>
+                                <Insets top="40.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                            <children>
+                                <Label prefHeight="61.0" prefWidth="622.0" text="I'm over 16" />
+                                <CheckBox fx:id="checkbox" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="1.0" prefWidth="0.0" textAlignment="CENTER" />
+                            </children>
+                        </HBox>
+                        <Label fx:id="warningLabel" prefHeight="47.0" prefWidth="680.0">
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </Label>
+                        <Button fx:id="skipBtn" mnemonicParsing="false" onAction="#skip" prefHeight="66.0" prefWidth="268.0" text="I'm not a student">
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                        </Button>
+                        <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submitEducation" prefHeight="61.0" prefWidth="680.0" text="Next">
+                            <VBox.margin>
+                                <Insets bottom="30.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="260.0" right="260.0" />
+                    </padding>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+    <stylesheets>
+        <URL value="@../assets/CSS/signUp.css" />
+    </stylesheets>
+</StackPane>

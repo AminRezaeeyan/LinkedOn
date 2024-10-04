@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1338.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane maxWidth="1200.0" prefHeight="679.0" prefWidth="1591.0" StackPane.alignment="CENTER">
+            <top>
+                <ImageView fitHeight="31.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+                    <image>
+                        <Image url="@../assets/images/linkedinLogo.png" />
+                    </image>
+                    <BorderPane.margin>
+                        <Insets top="15.0" />
+                    </BorderPane.margin>
+                </ImageView>
+            </top>
+            <center>
+                <VBox alignment="CENTER" prefHeight="636.0" prefWidth="868.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="welcomeLabel" alignment="CENTER" prefHeight="66.0" prefWidth="680.0" styleClass="heading" text="Are you looking for a job?" wrapText="true" />
+                        <Label fx:id="subheading" alignment="CENTER" prefHeight="43.0" prefWidth="689.0" text="Your response is only visible to you" textAlignment="CENTER">
+                            <VBox.margin>
+                                <Insets bottom="30.0" />
+                            </VBox.margin></Label>
+                        <RadioButton fx:id="radioButton" mnemonicParsing="false" prefHeight="82.0" prefWidth="590.0" selected="true" styleClass="radioBtn" text="Yes, I'm actively looking for a new job">
+                            <toggleGroup>
+                                <ToggleGroup fx:id="job" />
+                            </toggleGroup>
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </RadioButton>
+                        <RadioButton layoutX="315.0" layoutY="311.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="590.0" styleClass="radioBtn" text="Not really, but would consider the right opportunity" toggleGroup="$job">
+                            <VBox.margin>
+                                <Insets bottom="10.0" />
+                            </VBox.margin>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </RadioButton>
+                        <RadioButton layoutX="315.0" layoutY="269.0" mnemonicParsing="false" prefHeight="82.0" prefWidth="590.0" styleClass="radioBtn" text="No, I'm not really interested in any job opportunity" toggleGroup="$job">
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                        </RadioButton>
+                        <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submitState" prefHeight="62.0" prefWidth="602.0" text="Next">
+                            <VBox.margin>
+                                <Insets top="30.0" />
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="260.0" right="260.0" />
+                    </padding>
+                </VBox>
+            </center>
+        </BorderPane>
+    </children>
+    <stylesheets>
+        <URL value="@../assets/CSS/signUp.css" />
+    </stylesheets>
+</StackPane>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.net.URL?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane maxWidth="1200.0" prefHeight="679.0">
+            <top>
+                <ImageView fitHeight="31.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+                    <image>
+                        <Image url="@../assets/images/linkedinLogo.png" />
+                    </image>
+                    <BorderPane.margin>
+                        <Insets top="15.0" />
+                    </BorderPane.margin>
+                </ImageView>
+            </top>
+            <center>
+                <GridPane focusTraversable="true" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.46661376953125" minWidth="10.0" percentWidth="35.0" prefWidth="262.9332580566406" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="489.0667419433594" minWidth="10.0" percentWidth="40.0" prefWidth="489.0667419433594" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="35.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="70.0" minHeight="45.0" prefHeight="70.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <BorderPane.margin>
+                        <Insets top="30.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <VBox fx:id="box" maxHeight="350.0" prefWidth="365.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets bottom="50.0" top="40.0" />
+                            </GridPane.margin>
+                            <children>
+                                <Label fx:id="firstNameLabel" prefHeight="44.0" prefWidth="94.0" text="First Name" />
+                                <AnchorPane prefHeight="43.0" prefWidth="380.0">
+                                    <children>
+                                        <TextField fx:id="firstNameInput" layoutX="1.0" layoutY="-3.0" prefHeight="55.0" prefWidth="379.0" styleClass="input" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+                                <Label fx:id="lastNameLabel" prefHeight="27.0" prefWidth="219.0" text="Last Name" />
+                                <AnchorPane prefHeight="60.0" prefWidth="385.0">
+                                    <children>
+                                        <TextField fx:id="lastNameInput" layoutX="1.0" layoutY="2.0" prefHeight="55.0" prefWidth="383.0" styleClass="input" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="20.0" />
+                                    </VBox.margin>
+                                </AnchorPane>
+                                <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submitName" prefHeight="54.0" prefWidth="385.0" text="Continue" />
+                            </children>
+                        </VBox>
+                        <Label fx:id="heading" alignment="CENTER" prefHeight="70.0" prefWidth="1320.0" styleClass="heading" text="Make the most of your professional life" GridPane.columnSpan="3" />
+                    </children>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </children>
+    <stylesheets>
+        <URL value="@../assets/CSS/signUp.css" />
+    </stylesheets>
+</StackPane>

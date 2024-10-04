@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="school" layoutX="33.0" layoutY="-2.0" prefHeight="36.0" prefWidth="573.0" style="-fx-font-size: 20px;" text="School">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Label>
+      <Label fx:id="degreeField" layoutX="33.0" layoutY="28.0" opacity="0.7" prefHeight="27.0" prefWidth="567.0" style="-fx-font-size: 18px;" text="DegreeField">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Label>
+      <Label fx:id="date" layoutX="33.0" layoutY="56.0" opacity="0.7" prefHeight="26.0" prefWidth="574.0" style="-fx-font-size: 16px;" text="date">
+         <padding>
+            <Insets left="15.0" />
+         </padding>
+      </Label>
+   </children>
+   <padding>
+      <Insets left="30.0" />
+   </padding>
+</AnchorPane>

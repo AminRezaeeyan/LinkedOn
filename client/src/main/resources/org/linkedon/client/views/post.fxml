@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox fx:id="post" maxHeight="-Infinity" maxWidth="580.0" minHeight="-Infinity" minWidth="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../assets/CSS/post.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane maxWidth="598.0" minWidth="580.0" prefHeight="102.0" prefWidth="580.0" style="-fx-background-radius: 30px;">
+         <children>
+            <Circle fx:id="ownerAvatar" fill="#eccdcd" layoutX="63.0" layoutY="51.0" radius="37.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="26.0" />
+            <Label fx:id="name" layoutX="118.0" layoutY="21.0" prefHeight="40.0" prefWidth="434.0" text="name">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="headline" layoutX="118.0" layoutY="61.0" opacity="0.6" prefHeight="26.0" prefWidth="426.0" text="headline" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="text" alignment="TOP_LEFT" opacity="0.7" prefWidth="800.0" text="text" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" left="30.0" top="20.0" />
+         </padding>
+      </Label>
+      <ImageView fx:id="postMedia" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" />
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.33" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.33" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="33.33" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label fx:id="likes" alignment="CENTER" opacity="0.6" prefHeight="58.0" prefWidth="194.0" text="0 likes">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="comments" alignment="CENTER" opacity="0.6" prefHeight="58.0" prefWidth="194.0" text="0 comments" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="reposts" alignment="CENTER" opacity="0.6" prefHeight="58.0" prefWidth="194.0" text="0 reposts" GridPane.columnIndex="2">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <Line endX="699.2929077148438" endY="0.89290851354599" startX="-100.0" stroke="#e1e1e1" />
+      <GridPane>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="25.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <FlowPane fx:id="like" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <FontIcon fx:id="likeIcon" iconLiteral="fa-thumbs-up" iconSize="25" styleClass="icon" wrappingWidth="26.39999485015869">
+                     <FlowPane.margin>
+                        <Insets left="60.0" />
+                     </FlowPane.margin>
+                  </FontIcon>
+                  <Label fx:id="likeText" prefHeight="47.0" prefWidth="82.0" text="Like">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+            </FlowPane>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <FontIcon iconLiteral="fa-comment" iconSize="25" styleClass="icon" wrappingWidth="28.80001926422119">
+                     <FlowPane.margin>
+                        <Insets left="60.0" />
+                     </FlowPane.margin>
+                  </FontIcon>
+                  <Label prefHeight="48.0" prefWidth="82.0" text="Comment">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+            </FlowPane>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2">
+               <children>
+                  <FontIcon iconLiteral="fa-share" iconSize="25" styleClass="icon" wrappingWidth="28.800021171569824">
+                     <FlowPane.margin>
+                        <Insets left="60.0" />
+                     </FlowPane.margin>
+                  </FontIcon>
+                  <Label prefHeight="50.0" prefWidth="82.0" text="Share">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+            </FlowPane>
+            <FlowPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3">
+               <children>
+                  <FontIcon iconLiteral="fa-retweet" iconSize="25" styleClass="icon" wrappingWidth="27.19998264312744">
+                     <FlowPane.margin>
+                        <Insets left="60.0" />
+                     </FlowPane.margin>
+                  </FontIcon>
+                  <Label prefHeight="49.0" prefWidth="82.0" text="Repost">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets left="10.0" />
+               </opaqueInsets>
+            </FlowPane>
+         </children>
+      </GridPane>
+   </children>
+</VBox>

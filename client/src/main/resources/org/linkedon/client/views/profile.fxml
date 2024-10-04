@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="1200.0" prefHeight="400.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ScrollPane fx:id="scrollPane" focusTraversable="false" hbarPolicy="NEVER" maxWidth="888.0" minWidth="1200.0" prefHeight="400.0" prefWidth="1200.0" vbarPolicy="NEVER">
+         <content>
+            <VBox fx:id="scrollContainer" prefWidth="1200.0" style="-fx-background-color: transparent;">
+               <children>
+                  <AnchorPane maxWidth="1305.0" minHeight="0.0" minWidth="1200.0" prefHeight="600.0" prefWidth="1200.0" style="-fx-background-radius: 15px 15px 0 0;" styleClass="profileContainer">
+                     <children>
+                        <ImageView fx:id="background" fitHeight="300.0" fitWidth="1200.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/images/defaultHeader.png" />
+                           </image>
+                        </ImageView>
+                        <Circle fx:id="avatar" fill="#85afbf" layoutX="135.0" layoutY="235.0" radius="106.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0" />
+                        <Label fx:id="name" layoutX="40.0" layoutY="351.0" prefHeight="47.0" prefWidth="469.0" text="Amin Rezaeeyan" />
+                        <Label fx:id="headline" layoutX="40.0" layoutY="409.0" prefHeight="31.0" prefWidth="674.0" text="Computer engineering student at Amir Kabir University of Technology" />
+                        <HBox layoutX="40.0" layoutY="453.0" prefHeight="31.0" prefWidth="513.0">
+                           <children>
+                              <Label fx:id="locationLabel" prefHeight="37.0" prefWidth="176.0" text="Location Location">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font></Label>
+                              <Button fx:id="contactInfo" mnemonicParsing="false" onAction="#contactInfo" prefHeight="37.0" prefWidth="137.0" text="Contact Info" />
+                              <Button fx:id="connections" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#connections" prefHeight="31.0" prefWidth="204.0" text="0 Connections">
+                                 <HBox.margin>
+                                    <Insets left="60.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Label fx:id="currentEducation" layoutX="653.0" layoutY="430.0" prefHeight="76.0" prefWidth="495.0" wrapText="true" />
+                        <FontIcon fx:id="editProfile" iconColor="#000000a3" iconLiteral="fa-pencil" iconSize="30" layoutX="1138.0" layoutY="353.0" text="" wrappingWidth="26.6002197265625" />
+                        <Button fx:id="connect" layoutX="40.0" layoutY="506.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="122.0" text="Connect" />
+                        <Button fx:id="follow" layoutX="180.0" layoutY="506.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="122.0" text="Follow" />
+                        <Button fx:id="message" layoutX="377.0" layoutY="506.0" mnemonicParsing="false" onAction="#message" prefHeight="40.0" prefWidth="122.0" text="Message" />
+                     </children>
+                  </AnchorPane>
+                  <GridPane styleClass="profileContainer">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                        <RowConstraints vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <VBox fx:id="educations" prefWidth="100.0" spacing="30.0" GridPane.rowIndex="1">
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                        <VBox fx:id="skills" prefWidth="100.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <padding>
+                              <Insets left="10.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                        <AnchorPane prefHeight="30.0" prefWidth="600.0">
+                           <children>
+                              <Label layoutX="37.0" prefHeight="40.0" prefWidth="160.0" style="-fx-font-weight: 700; -fx-font-size: 28px;" text="Educations">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                              <FontIcon fx:id="addEducation" iconLiteral="fa-plus" iconSize="25" layoutX="335.0" layoutY="30.0" y="1.0" AnchorPane.topAnchor="8.571428298950195" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="30.0" prefWidth="600.0" GridPane.columnIndex="1">
+                           <children>
+                              <Label prefHeight="40.0" prefWidth="160.0" style="-fx-font-weight: 700; -fx-font-size: 28px;" text="Skills">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Label>
+                              <FontIcon fx:id="addSkill" iconLiteral="fa-plus" iconSize="25" layoutX="196.0" layoutY="27.0" translateY="3.0" y="3.0" AnchorPane.topAnchor="6.571428298950195" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </GridPane>
+               </children>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </VBox>
+         </content>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </ScrollPane>
+   </children>
+   <stylesheets>
+      <URL value="@../assets/CSS/profile.css" />
+   </stylesheets>
+</StackPane>

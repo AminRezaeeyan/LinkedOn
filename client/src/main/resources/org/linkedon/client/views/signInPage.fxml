@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane maxWidth="1200.0" prefHeight="679.0" prefWidth="1427.0">
+            <top>
+                <ImageView fitHeight="31.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_LEFT">
+                    <image>
+                        <Image url="@../assets/images/linkedinLogo.png" />
+                    </image>
+                    <BorderPane.margin>
+                        <Insets top="15.0" />
+                    </BorderPane.margin>
+                </ImageView>
+            </top>
+            <center>
+                <GridPane focusTraversable="true" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="367.46661376953125" minWidth="10.0" percentWidth="35.0" prefWidth="262.9332580566406" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="489.0667419433594" minWidth="10.0" percentWidth="30.0" prefWidth="489.0667419433594" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="37.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <BorderPane.margin>
+                        <Insets top="30.0" />
+                    </BorderPane.margin>
+                    <children>
+                        <VBox fx:id="box" prefHeight="613.0" prefWidth="365.0" GridPane.columnIndex="1">
+                            <GridPane.margin>
+                                <Insets bottom="100.0" top="45.0" />
+                            </GridPane.margin>
+                            <children>
+                                <Label fx:id="heading" prefHeight="75.0" prefWidth="428.0" text="Sign in" />
+                                <Label fx:id="subheading" prefHeight="37.0" prefWidth="379.0" text="Stay updated on your professional world">
+                                    <VBox.margin>
+                                        <Insets bottom="40.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <AnchorPane prefHeight="51.0" prefWidth="385.0">
+                                    <children>
+                                        <TextField fx:id="emailInput" layoutX="2.0" layoutY="-3.0" prefHeight="55.0" prefWidth="379.0" />
+                                        <Label fx:id="emailLabel" layoutX="28.0" layoutY="7.0" prefHeight="39.0" prefWidth="51.0" text="Email" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </AnchorPane>
+                                <Label fx:id="emailWarning" prefHeight="41.0" prefWidth="385.0">
+                                    <padding>
+                                        <Insets bottom="10.0" />
+                                    </padding></Label>
+                                <AnchorPane prefHeight="60.0" prefWidth="385.0">
+                                    <children>
+                                        <TextField fx:id="passwordInput" layoutX="1.0" layoutY="2.0" prefHeight="55.0" prefWidth="383.0" />
+                                        <Label fx:id="passwordLabel" layoutX="27.0" layoutY="15.0" prefHeight="30.0" prefWidth="87.0" text="Password" />
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                                </AnchorPane>
+                                <Label fx:id="passwordWarning" prefHeight="62.0" prefWidth="385.0">
+                                    <padding>
+                                        <Insets bottom="10.0" />
+                                    </padding></Label>
+                                <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submit" prefHeight="54.0" prefWidth="385.0" text="Sign in" />
+                                <Label fx:id="privacyText" prefHeight="57.0" prefWidth="385.0" text="By clicking Continue, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.">
+                                    <VBox.margin>
+                                        <Insets top="15.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <HBox alignment="CENTER" prefHeight="42.0" prefWidth="251.0">
+                                    <VBox.margin>
+                                        <Insets top="25.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Label fx:id="guide" contentDisplay="RIGHT" prefHeight="42.0" prefWidth="125.0" style="-fx-font-size: 16;" text="New to LinkedIn?" textAlignment="RIGHT" />
+                                        <Button fx:id="joinBtn" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="42.0" prefWidth="94.0" text="Join now" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </GridPane>
+            </center>
+        </BorderPane>
+    </children>
+    <stylesheets>
+        <URL value="@../assets/CSS/signIn.css" />
+    </stylesheets>
+</StackPane>

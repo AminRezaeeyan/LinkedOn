@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../assets/CSS/network.css" />
+    </stylesheets>
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1200.0" prefWidth="1200.0">
+         <children>
+            <Label fx:id="connectionCountLabel" maxWidth="1.7976931348623157E308" prefHeight="50.0" prefWidth="1201.0" styleClass="box-heading" text="0 connections">
+               <padding>
+                  <Insets left="40.0" />
+               </padding></Label>
+            <ScrollPane hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" prefWidth="1200.0" styleClass="scrollPane" vbarPolicy="NEVER">
+               <content>
+                  <VBox fx:id="connectionContainer" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1200.0" spacing="5.0">
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</StackPane>

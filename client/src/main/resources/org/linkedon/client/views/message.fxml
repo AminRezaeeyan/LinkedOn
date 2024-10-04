@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1000.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="container" prefWidth="1000.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Circle fx:id="avatar" fill="DODGERBLUE" radius="54.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="4.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="60.0" top="10.0" />
+                     </HBox.margin>
+                  </Circle>
+                  <Label fx:id="name" prefHeight="62.0" prefWidth="725.0" text="FirstName LastName">
+                     <HBox.margin>
+                        <Insets left="40.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <ScrollPane fx:id="chatContainer" fitToHeight="true" hbarPolicy="NEVER" maxHeight="1.7976931348623157E308" prefWidth="1000.0" styleClass="scrollPane" vbarPolicy="NEVER" vvalue="1.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="chat" alignment="BOTTOM_CENTER" maxHeight="1.7976931348623157E308" prefWidth="1000.0" spacing="10.0" />
+               </content>
+            </ScrollPane>
+         </center>
+         <bottom>
+            <TextField fx:id="input" prefHeight="70.0" prefWidth="1000.0" promptText="Message..." BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="40.0" right="40.0" top="20.0" />
+               </BorderPane.margin>
+            </TextField>
+         </bottom>
+      </BorderPane>
+   </children>
+    <stylesheets>
+        <URL value="@../assets/CSS/message.css" />
+    </stylesheets>
+   <padding>
+      <Insets bottom="30.0" top="30.0" />
+   </padding>
+</StackPane>

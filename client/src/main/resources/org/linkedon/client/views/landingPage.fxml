@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="769.0" prefWidth="1421.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1200.0" prefHeight="272.0" prefWidth="459.0" stylesheets="@../assets/CSS/landingPage.css">
+         <top>
+            <GridPane hgap="15.0" prefHeight="79.0" prefWidth="1083.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="NEVER" maxWidth="958.3999389648437" minWidth="10.0" percentWidth="76.0" prefWidth="958.3999389648437" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.1333618164062" minWidth="51.000061035156136" percentWidth="12.0" prefWidth="51.000061035156136" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="274.53338623046875" minWidth="150.0" percentWidth="12.0" prefWidth="150.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="31.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/images/linkedinLogo.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="header_join_btn" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="50.0" prefWidth="146.0" text="Join now" GridPane.columnIndex="1" />
+                  <Button fx:id="header_sign_in_btn" mnemonicParsing="false" onAction="#handleLogin" prefHeight="50.0" prefWidth="138.0" text="Sign in" GridPane.columnIndex="2" />
+               </children>
+            </GridPane>
+         </top>
+         <center>
+            <GridPane prefHeight="651.0" prefWidth="1254.0" BorderPane.alignment="CENTER">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="50.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="55.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="690.8" minHeight="10.0" prefHeight="660.0666870117187" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="622.0" fitWidth="730.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                     <image>
+                        <Image url="@../assets/images/landingPage.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="690.0" prefWidth="597.0">
+                     <children>
+                        <Label fx:id="heading" prefHeight="312.0" prefWidth="537.0" text="Welcome to your professional community" />
+                        <Button fx:id="main_sign_in_btn" mnemonicParsing="false" onAction="#handleLogin" prefHeight="62.0" prefWidth="567.0" text="Sign in with email">
+                           <VBox.margin>
+                              <Insets bottom="20.0" right="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="privacy_text" prefHeight="67.0" prefWidth="556.0" text="By clicking Continue to join or sign in, you agree to LinkedIn’s User Agreement, Privacy Policy, and Cookie Policy.">
+                           <padding>
+                              <Insets left="20.0" right="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets bottom="40.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="511.0">
+                           <children>
+                              <HBox prefHeight="50.0" prefWidth="156.0">
+                                 <children>
+                                    <Label prefHeight="50.0" prefWidth="154.0" styleClass="guide" text="New to LinkedIn?" textAlignment="RIGHT">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <Button fx:id="main_join_btn" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleSignUp" prefHeight="42.0" prefWidth="85.0" text="Join now" textOverrun="CLIP" />
+                           </children>
+                           <padding>
+                              <Insets right="15.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="30.0" right="30.0" />
+                     </padding>
+                  </VBox>
+                  <Button fx:id="themeBtn" alignment="TOP_RIGHT" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onAction="#handleTheme" prefHeight="50.0" prefWidth="50.0" translateY="-20.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                     <graphic>
+                        <FontIcon fx:id="themeIcon" iconLiteral="fa-sun-o" iconSize="50" wrappingWidth="40" />
+                     </graphic>
+                  </Button>
+                  <Label alignment="CENTER" prefHeight="60.0" prefWidth="82.0" styleClass="guide" text="Theme :" translateY="-20.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="50.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../assets/CSS/landingPage.css" />
+   </stylesheets>
+</StackPane>

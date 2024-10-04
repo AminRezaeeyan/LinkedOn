@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<StackPane minWidth="1200.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane hgap="20.0" maxHeight="1.7976931348623157E308" maxWidth="1200.0" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1200.0">
+         <stylesheets>
+            <URL value="@../assets/CSS/network.css" />
+            <URL value="@../assets/CSS/main.css" />
+         </stylesheets>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="300.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="870.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" percentHeight="100.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox prefHeight="498.0" prefWidth="302.0" spacing="10.0" GridPane.rowIndex="3">
+               <children>
+                  <Label alignment="CENTER" prefHeight="65.0" prefWidth="308.0" style="-fx-font-weight: 700;" styleClass="box-heading" text="Manage my network">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="networkBody" prefWidth="302.0">
+                     <children>
+                        <HBox fx:id="connections" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="281.0">
+                           <children>
+                              <FontIcon fill="#515151" iconLiteral="fa-group" iconSize="25" wrappingWidth="26.666698455810547" />
+                              <Label prefHeight="62.0" prefWidth="239.0" text="Connections">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="15.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </HBox>
+                        <HBox fx:id="followers" alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="281.0">
+                           <children>
+                              <FontIcon fill="#515151" iconLiteral="fa-user" iconSize="25" wrappingWidth="18.13341522216797" />
+                              <Label prefHeight="50.0" prefWidth="267.0" text="Followers">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="20.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" styleClass="scrollPane" vbarPolicy="NEVER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <content>
+                  <VBox prefWidth="876.0">
+                     <children>
+                        <Label fx:id="invitationLabel" prefHeight="65.0" prefWidth="876.0" styleClass="box-heading" text="Invitations">
+                           <padding>
+                              <Insets left="30.0" />
+                           </padding>
+                        </Label>
+                        <VBox fx:id="inviteContainer" maxWidth="1.7976931348623157E308" spacing="10.0">
+                           <padding>
+                              <Insets top="10.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+   </children>
+   <padding>
+      <Insets top="30.0" />
+   </padding>
+</StackPane>

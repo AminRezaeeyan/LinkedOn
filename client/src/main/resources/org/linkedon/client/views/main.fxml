@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+         <top>
+            <StackPane fx:id="nav" prefHeight="52.0" prefWidth="1210.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane maxWidth="1200.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1160.000015258789" minWidth="10.0" percentWidth="25.0" prefWidth="227.6000061035156" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1160.000015258789" minWidth="10.0" prefWidth="690.3999938964844" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="1160.000015258789" minWidth="10.0" prefWidth="210.79986572265625" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <ImageView fitHeight="36.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/images/linkedinIcon.png" />
+                           </image>
+                        </ImageView>
+                        <HBox fx:id="searchBox" alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="518.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <children>
+                              <FontIcon fx:id="searchIcon" fill="#484848" iconLiteral="fa-search" iconSize="20" selectionEnd="40" selectionFill="#00000084" wrappingWidth="24.0" />
+                              <TextField fx:id="searchInput" focusTraversable="false" prefHeight="40.0" prefWidth="195.0" promptText="Search">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                           <GridPane.margin>
+                              <Insets right="70.0" />
+                           </GridPane.margin>
+                        </HBox>
+                        <GridPane prefHeight="32.0" prefWidth="646.0" GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="16.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <VBox fx:id="home" alignment="CENTER" onMouseClicked="#handleSelectedBox" prefHeight="200.0" prefWidth="107.0" styleClass="box">
+                                 <children>
+                                    <FontIcon fill="#444444" iconLiteral="fa-home" iconSize="25" styleClass="navIcon" wrappingWidth="26.599910259246826" />
+                                    <Label prefHeight="18.0" prefWidth="120.0" style="-fx-alignment: center;" text="Home" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="job" alignment="CENTER" layoutX="10.0" layoutY="7.0" onMouseClicked="#handleSelectedBox" prefHeight="200.0" prefWidth="107.0" styleClass="box" GridPane.columnIndex="2">
+                                 <children>
+                                    <FontIcon fill="#444444" iconLiteral="fa-briefcase" iconSize="25" styleClass="navIcon" wrappingWidth="26.599910259246826" />
+                                    <Label prefHeight="18.0" prefWidth="120.0" style="-fx-alignment: center;" text="Jobs" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="network" alignment="CENTER" layoutX="117.0" layoutY="7.0" onMouseClicked="#handleSelectedBox" prefHeight="200.0" prefWidth="107.0" styleClass="box" GridPane.columnIndex="1">
+                                 <children>
+                                    <FontIcon fill="#444444" iconLiteral="fa-group" iconSize="25" styleClass="navIcon" wrappingWidth="26.599910259246826" />
+                                    <Label prefHeight="18.0" prefWidth="120.0" style="-fx-alignment: center;" text="My Network" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="message" alignment="CENTER" layoutX="230.0" layoutY="7.0" onMouseClicked="#handleSelectedBox" prefHeight="40.0" prefWidth="114.0" styleClass="box" GridPane.columnIndex="3">
+                                 <children>
+                                    <FontIcon fill="#444444" iconLiteral="fa-comment" iconSize="25" styleClass="navIcon" wrappingWidth="26.599910259246826" />
+                                    <Label prefHeight="154.0" prefWidth="114.0" style="-fx-alignment: center;" text="Messaging" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="notification" alignment="CENTER" layoutX="10.0" layoutY="7.0" onMouseClicked="#handleSelectedBox" prefHeight="46.0" prefWidth="114.0" styleClass="box" GridPane.columnIndex="4">
+                                 <children>
+                                    <FontIcon fill="#444444" iconLiteral="fa-bell" iconSize="25" styleClass="navIcon" wrappingWidth="26.599910259246826" />
+                                    <Label prefHeight="18.0" prefWidth="120.0" style="-fx-alignment: center;" text="Notifications" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" onMouseClicked="#showUserProfile" prefHeight="48.0" prefWidth="114.0" GridPane.columnIndex="5">
+                                 <children>
+                                    <ImageView fx:id="navProfileImage" fitHeight="29.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label prefHeight="15.0" prefWidth="114.0" style="-fx-alignment: center;" text="Me" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </StackPane>
+         </top>
+         <center>
+            <StackPane fx:id="container" maxWidth="Infinity" minWidth="1200.0" BorderPane.alignment="CENTER" />
+         </center>
+         <stylesheets>
+            <URL value="@../assets/CSS/main.css" />
+         </stylesheets>
+      </BorderPane>
+   </children>
+</StackPane>
